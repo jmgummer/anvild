@@ -1,0 +1,73 @@
+.pdf-left{
+	float: left;
+	width: 40%
+}
+
+.pdf-right{
+	float: right;
+	width: 40%;
+}
+
+.clear-pdf{
+	clear: both;
+	margin-bottom: 20px;
+}
+
+table
+{
+	border-collapse:collapse;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	width: 100%;
+}
+
+table,th, td
+{
+	border-top: 1px solid #ddd;
+	/*width: 100%;*/
+}
+
+td{
+	vertical-align:top;
+}
+.cell-right{
+	text-align:right;
+}
+.cell-left{
+	text-align:left;
+}
+
+th {
+  font-weight: bold;
+  vertical-align:top;
+}
+
+th, td {
+  padding: 4px 5px;
+}
+
+.tax-cell{
+	background: #ddd;
+}
+
+.table-money{
+  text-align: right;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: auto;
+	text-align: right;
+}
+
+.note-section{
+	float: left;
+	width: 50%;
+}
+.term-section{
+	float: right;
+	width: 50%;
+}

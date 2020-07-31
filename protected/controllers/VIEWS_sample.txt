@@ -1,0 +1,15 @@
+CREATE VIEW samples_view_2014_09_KCB AS SELECT reelforge_sample_2014_09.brand_id as brand_id, reelforge_sample_2014_09.entry_type_id as entry_type_id, reelforge_sample_2014_09.incantation_id as incantation_id,
+        reelforge_sample_2014_09.station_id as station_id,
+        reelforge_sample_2014_09.reel_date as date,
+        reelforge_sample_2014_09.reel_time as time,
+        reelforge_sample_2014_09.rate as rate,
+        brand_table.brand_name as brand_name,
+        station.station_name,
+        djmentions_entry_types.entry_type as entry_type,
+        incantation.incantation_length as duration
+        FROM reelforge_sample_2014_09, incantation,brand_table,djmentions_entry_types, station 
+        WHERE reelforge_sample_2014_09.brand_id=4387 
+        AND station.station_id = reelforge_sample_2014_09.station_id
+        AND reelforge_sample_2014_09.brand_id=brand_table.brand_id  
+        AND reelforge_sample_2014_09.incantation_id=incantation.incantation_id 
+        AND reelforge_sample_2014_09.entry_type_id=djmentions_entry_types.entry_type_id
